@@ -1,0 +1,37 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+	font-size: 1.5rem;	
+	font-weight: bold;
+}
+
+#wholeContent {
+	background-color: #042f66;
+}
+
+#navbarNav {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#hi {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+.svg{
+	height: 50px;
+	width: 50px;
+	background-color: ghostwhite;
+	border-radius: 50px;
+	margin-left: 50px;
+	border: royalblue solid 2px;
+}
