@@ -4,6 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+	<!-- Animation -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="./index.css">
 
@@ -20,6 +23,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
 	<!-- Bootstrap Link -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 	<!-- Bootstrap Link End -->
@@ -27,64 +34,226 @@
 	<title>My Portfolio</title>
 </head>
 <body id="wholeContent" class="container-fluid">
-	<!-- Landing page -->
-	<div id="landingPage" class="p-5">
-		<!-- Navbar -->
-		<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-	  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    		<span class="navbar-toggler-icon"></span>
-	  		</button>
-	  		<div class="collapse navbar-collapse" id="navbarNav">
-	  			<a href="landingPage"><img src="file:///C:/Users/Admin/Documents/Zuitt%20Files/B247/Capstone%201/images/hair-styles-men-svgrepo-com.svg" class="svg"></a>
-	  			<ul class="navbar-nav ml-auto justify-content-end">
-	  				<li>
-	  					<a class="nav-link text-light p-5" href="#">Home</a>
-	  				</li>
-	  				<li class="nav-item active">
-	  					<a class="nav-link text-light p-5" href="#">About Me<span class="sr-only">(current)</span></a>
-	  				</li>
-	  				<li class="nav-item">
-	  					<a class="nav-link text-light p-5" href="#">Gallery</a>
-	  				</li>
-	  				<li>
-	  					<a class="nav-link text-light p-5" href="#">Contact Me</a>
-	  				</li>
-	  			</ul>	
-	  		</div>
-		</nav>
+	<!-- Landing page start -->
+			<!-- Navbar section -->
+			<header>
+				<nav class="navbar navbar-expand-lg navbar-dark" id="navBar">
+			  		<a href="#" class="navbar-brand" id="homeNavbar">Home</a>
+			  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    		<span class="navbar-toggler-icon"></span>
+			  		</button>
+			  		<div class="collapse navbar-collapse" id="navbarNav">
+			  			<ul class="navbar-nav ml-auto">
+			  				<li class="nav-item active">
+			  					<a class="nav-link" href="#aboutMe" id="aboutMeLandingPage">About Me<span class="sr-only">(current)</span></a>
+			  				</li>
+			  				<li class="nav-item active">
+			  					<a class="nav-link" href="#gallery" id="galleryLandingPage">Gallery</a>
+			  				</li>
+			  				<li class="nav-item active">
+			  					<a class="nav-link" href="#contactMe" id="contactMeLandingPage">Contact Me</a>
+			  				</li>
+			  				<li>
+			  					<a class="nav-link" href="./images/EJ%20David%20Guardo%20(ECE)%20-%20Resume.pdf" target="_blank"><button id="resumeButton">Resume</button></a>
+			  				</li>
+			  			</ul>	
+			  		</div>
+				</nav>
+			</header>
+			<!-- Navbar section end -->		
 
-		<div id="hi">
+			<main>
+			<div class="container-fluid">
+
+					<!-- Icons start -->
+					 <div class="row">
+								<div>
+									<ul id="links" class="list-unstyled">
+										<li>
+											<a href="https://www.instagram.com/itsengrguardo/" target="_blank"><img src="./images/instagram-1-svgrepo-com.svg" id="svg-ig"></a>
+										</li>
+										<li>
+											<a href="https://www.linkedin.com/in/ej-david-guardo" target="_blank"><img src="./images/linkedin-1-svgrepo-com.svg" id="svg-linkedin"></a>
+										</li>
+										<li>
+											<a href="https://www.facebook.com/guardoej1218" target="_blank"><img src="./images/facebook-svgrepo-com.svg" id="svg-fb"></a>
+										</li>
+										<li>
+											<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="./images/icons8-gmail-48.png" id="svg-gmail"></a>
+										</li>
+									</ul>
+								</div> 
+						</div>
+					<!-- Icons end --> 
+					
+					<!-- Introduction start -->
+								<div class="introduction row">
+											<div class="p-5 col-12 col-lg-11 col-sm-3 offset-sm-3 col-md-7 offset-sm-7 offset-lg-1">
+													<h3 id="intro">Hi, my name is</h3>
+													<h1 id="name">EJ David Guardo</h1>
+													<p id="description">I'm an electronics engineer who is passionate in becoming a web developer.</p>					
+											</div>
+								</div>  
+					<!-- Introduction end -->
+					<!-- Landing Page End -->
+
+					<!-- About Me Start-->
+						<div id="aboutMe" class="row">
+							<div class="col-12 col-lg-10 offset-1 col-md-12">
+									<h3 id="aboutMeText">About Me</h3>
+										<div>
+												<img src="./images/pic3.jpg" id="profilePicture" class="img-fluid">
+										</div>
+										<div class="col-8 text-justify mb-5">
+												<p class="aboutMeParagraph">Hello! My name is EJ David and I am passionate when it comes to web designs and web development. I enjoy creating things on the internet. My interest in web development started back in 2022 when I watched one of my colleagues started to design a website. I have had background in some programming languages before, as well as testing websites, yet I decided to enroll in Zuitt bootcamp in order to refresh my knowledge and to sharpen my skills regarding web development. </p>
+										</div>
+							</div>
+						</div>
+					<!-- About Me End -->
+
+					<!-- Gallery Start -->
+
+					<!-- Other Projects Section Start -->
+					<div id="gallery" class="min-vh-100 p-5 row">
+						<h2 id="galleryText" class="col-12 col-lg-10 col-sm-4 col-md-12">Art Gallery</h2>
+
+						<!-- Other Projects Container Start -->
+						<div class="d-lg-flex justify-content-center p-md-5">
+							<!-- HTML Card Start -->
+							<div id="htmlCard" class="card col-xl-4 mb-5 mb-xl-0">
+								<div class="card-body">
+									<img src="./images/327411836_1234700567118595_1486736636604112804_n.jpg" class="card-img-top img-fluid" alt="...">
+									<h5 class="card-title mt-3 text-light text-center">How do you break the pattern?</h5>
+									<p class="card-text text-light text-justify">
+										It will depend from situation to situation and we're all on our own unique journey of awareness. So there's no cookie cutter way for us all. Yet what often helps me is to first notice the pattern. But it's important to pause and acknowledge that we can only make a difference from a space of recognition. And even though this is obvious, here's the difficult part: it will require <span>ACCOUNTABILITY</span> (not blame nor fault) on our part. Accountability heals. In other words, owning our side of the street.
+									</p>
+								</div>
+							</div>
+							<!-- HTML Card End -->
+
+							<!-- Bootstrap Card Start -->
+							<div id="bootstrapCard" class="card col-xl-4 mb-5 mb-xl-0 mr-xl-5 ml-xl-5">
+								<div class="card-body">
+									<img src="./images/327402215_566057032070048_4038414916907550625_n.jpg" class="card-img-top img-fluid" alt="...">
+									<h5 class="card-title mt-3 text-light text-center">Some periods of our growth are so confusing..</h5>
+									<p class="card-text text-light text-justify">
+										Some periods of our growth are so confusing that we don't even recognize that growth is happening. We may feel hostile or angry or weepy and hysterical, or we may feel depressed. It would never occur to us, unless we stumbled on a book or a pweson who explained to us, that we were in fact in the process of change, of actually becoming larger, spiritually, than we were before.
+									</p>
+								</div>
+							</div>
+							<!-- Bootstrap Card End -->
+
+							<!-- Node JS Card Start -->
+							<div id="nodeJsCard" class="card col-xl-4 mb-5 mb-xl-0">
+								<div class="card-body">
+									<img src="./images/327310390_583081389916410_7085952992042651304_n.jpg" class="card-img-top img-fluid" alt="...">
+									<h5 class="card-title mt-3 text-light text-center">Feel it. You're human.</h5>
+									<p class="card-text text-light text-justify">
+										There is absolutely nothing wrong with the way you feel. Nothing. Feel it. You're human. This is what being human feels like. So be human. Sometimes this process is messy. Sometimes it's not so clear where you are or where you are headed. And that's perfectly okay. Do not shame yourself anymore for where you are, for what you feel, for who you are and definitely not for the speed at which you are growing. Your growth doesn't have to look like anybody else's.
+									</p>
+								</div>
+							</div>
+							<!-- Node JS Card End -->
+
+						</div>
+					</div>
+					<!-- Other Projects Section End -->
+					<!-- Gallery End -->
+
+					<!-- Contact Me Start -->
+					<div class="row" id="contactMe"> 
+							<div class="col-12 offset-1 col-lg-6 col-xl-9">
+								<div class="m-5 p-5 container-fluid">
+									<h3 id="contactMeText" class="text-center">HAVE SOME QUESTIONS?</h3>
+								</div>
+										<div class="p-5 col-11 col-lg-11 offset-1 col-sm-11 col-md-11">
+												<form class="container-fluid" id="contactMe">
+													
+												<!-- Name section -->
+												<div class="mb-2 pt-2">
+														<label for="contactMeName" class="text-light form-label pt-2"></label><br>
+														<input type="text" class="form-control" id="contactMeName" name="name" placeholder="Name" required autocomplete="on">
+												</div>
+
+												<!-- Email address section -->
+												<div class="mb-2 pt-2">
+															<label for="email" class="text-light form-label pt-2"></label><br>
+															<input type="email" class="form-control" id="email" name="email" placeholder="What's your email?" required autocomplete="on">
+												</div>
+
+												<!-- Contact number section -->
+												<div class="mb-2 pt-2">
+															<label for="contactNumber" class="text-light form-label pt-2"></label><br>
+															<input type="number" class="form-control" id="contactNumber" name="contactNumber" placeholder="Contact No." required autocomplete="on">
+												</div>
+
+												<!-- Message section-->
+												<div class="mb-2 pt-2">
+														<label for="message" class="text-light form-label pt-2"></label>
+														<textarea name="message" rows="8" id="message" class="form-control">Your questions...</textarea>
+												</div>
+
+												<!-- Button section -->
+												<div class="mb-2 pt-2 p-5 col-12 col-lg-10 offset-1 col-sm-4 col-md-4 d-lg-flex justify-content-center">
+													<button type="submit" id="sendButton" class="text-white pr-5 pl-5 btn btn-primary" data-toggle="modal" data-target="exampleModal">SEND MESSAGE</button>
+												</div>
+
+												<!-- Modal section -->
+												<div class="modal" tabindex="-1" id="exampleModal">
+												  <div class="modal-dialog">
+												    <div class="modal-content">
+												      <div class="modal-header">
+												        <h5 class="modal-title">Thank you!</h5>
+												        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												          <span aria-hidden="true">&times;</span>
+												        </button>
+												      </div>
+												      <div class="modal-body">
+												        <p>Your response has been submitted.</p>
+												      </div>
+												      <div class="modal-footer">
+												        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												      </div>
+												    </div>
+												  </div>
+												</div>
+
+												</form>
+										</div>
+								</div>
+						</div>
+					<!-- Contact Me End -->
+				</div>
+	</main>
+	<!-- Main Section End -->
+
+	<footer>
 			<div>
-				<h3 class="text-success">Hi, my name is</h3>
-				<h1 class="text-mute font-weight-bold text-light">EJ David Guardo</h1>
+            <!-- Creates an inline element -->
+            <span class="span">Designed & Built by EJ David Guardo</span>
+            <span>&copy;</span>
+            <span>2023</span>
 			</div>
-		</div>
-	</div>
-	<!-- Navbar Section End -->
-
-	<!-- Background -->
-	<!-- <div class="d-flex flex-column justify-content-center w-100 h-100 align-items-center">
-		<h1>HEY, I AM EJ DAVID GUARDO</h1>
-	</div> -->
-
-
-
-
-
-
-
-
+	</footer>
+		
+ 
 
 <!-- JS Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 <!-- JS Bootstrap End -->
 
-<!-- Jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<!-- Animation script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+	$('#contactMe').on('submit', function(e) {
+  $('#exampleModal').modal('show');
+  e.preventDefault();
+});
+</script>
 
 </body>
 </html>
