@@ -7,8 +7,7 @@
 
 #wholeContent{
 	background-image: url(./images/pngtree-blue-minimalist-texture-background-image_557079.jpg);
-	background-size: 100%;
-	object-fit: cover;
+	background-size: contain;
 }
 
 /*Navbar Start*/
@@ -103,11 +102,10 @@
 /*AboutMe start*/
 #name {
 	font-weight: bold;
-	font-size: 5rem;
 	color: ghostwhite;
 }
 
-.introduction{
+#introduction{
 	justify-content: center;
 	flex-direction: column;
 	align-items: flex-start;
@@ -117,12 +115,10 @@
 }
 
 #intro{
-	font-size: 3rem;
 	color: #64ffda;
 }
 
 #description{
-	font-size: 2rem;
 	color: floralwhite;
 }
 
@@ -133,8 +129,6 @@
 	object-fit: cover;
 	opacity: 1;
 	float: right;
-	margin: 5px;
-	margin-top: 7rem;
 	opacity: 0.5;
 }
 
@@ -144,18 +138,16 @@
 
 #aboutMe{
 	color: #64ffda;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
-	margin-bottom: 10rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 }
 
 #aboutMeText{
-	font-size: 5rem;
+	width: 50rem;
 }
 
-.aboutMeParagraph{
+#aboutMeParagraph{
 	color: whitesmoke;
-	font-size: 2rem;
 	text-indent: 5%;
 }
 
@@ -194,10 +186,10 @@
 /*Gallery Start*/
 #gallery{
 	padding-top: 10rem;
+	padding-bottom: 10rem;
 }
 
 #galleryText{
-	font-size: 5rem;
 	color: #64ffda;
 	padding-top: 10rem;
 }
@@ -228,30 +220,12 @@
 	font-size: 1rem;
 }
 
-
-
-
-
-
-
-
 /*Gallery End/
 
 
 /*ContactMe Start*/
 #contactMe{
 	color: #64ffda;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	margin-bottom: 10rem;
-}
-
-#contactMeText{
-	font-size: 5rem;
-}
-
-#contactMeName{
-
 }
 
 #sendButton{

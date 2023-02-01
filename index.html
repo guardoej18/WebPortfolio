@@ -87,8 +87,8 @@
 					<!-- Icons end --> 
 					
 					<!-- Introduction start -->
-								<div class="introduction row">
-											<div class="p-5 col-12 col-lg-11 col-sm-3 offset-sm-3 col-md-7 offset-sm-7 offset-lg-1">
+								<div class="row" id="introduction">
+											<div class="col-12">
 													<h3 id="intro">Hi, my name is</h3>
 													<h1 id="name">EJ David Guardo</h1>
 													<p id="description">I'm an electronics engineer who is passionate in becoming a web developer.</p>					
@@ -99,14 +99,10 @@
 
 					<!-- About Me Start-->
 						<div id="aboutMe" class="row">
-							<div class="col-12 col-lg-10 offset-1 col-md-12">
-									<h3 id="aboutMeText">About Me</h3>
-										<div>
-												<img src="./images/pic3.jpg" id="profilePicture" class="img-fluid">
-										</div>
-										<div class="col-8 text-justify mb-5">
-												<p class="aboutMeParagraph">Hello! My name is EJ David and I am passionate when it comes to web designs and web development. I enjoy creating things on the internet. My interest in web development started back in 2022 when I watched one of my colleagues started to design a website. I have had background in some programming languages before, as well as testing websites, yet I decided to enroll in Zuitt bootcamp in order to refresh my knowledge and to sharpen my skills regarding web development. </p>
-										</div>
+							<div class="col-12">
+									<h1 id="aboutMeText">About Me</h1>
+												<img src="./images/pic3.jpg" id="profilePicture" class="img-fluid d-flex justify-content-center">
+												<p id="aboutMeParagraph" class="col-8 text-white text-justify">Hello! My name is EJ David and I am passionate when it comes to web designs and web development. I enjoy creating things on the internet. My interest in web development started back in 2022 when I watched one of my colleagues started to design a website. I have had background in some programming languages before, as well as testing websites, yet I decided to enroll in Zuitt bootcamp in order to refresh my knowledge and to sharpen my skills regarding web development. </p>
 							</div>
 						</div>
 					<!-- About Me End -->
@@ -114,8 +110,8 @@
 					<!-- Gallery Start -->
 
 					<!-- Other Projects Section Start -->
-					<div id="gallery" class="min-vh-100 p-5 row">
-						<h2 id="galleryText" class="col-12 col-lg-10 col-sm-4 col-md-12">Art Gallery</h2>
+					<div id="gallery" class="row">
+						<h1 id="galleryText" class="col-12">Art Gallery</h1>
 
 						<!-- Other Projects Container Start -->
 						<div class="d-lg-flex justify-content-center p-md-5">
@@ -161,13 +157,13 @@
 					<!-- Gallery End -->
 
 					<!-- Contact Me Start -->
-					<div class="row" id="contactMe"> 
-							<div class="col-12 offset-1 col-lg-6 col-xl-9">
-								<div class="m-5 p-5 container-fluid">
-									<h3 id="contactMeText" class="text-center">HAVE SOME QUESTIONS?</h3>
+					<div class="row pb-5" id="contactMe"> 
+							<div class="col-12">
+								<div class="container-fluid">
+									<h1 id="contactMeText" class="text-center col-12">Contact Me</h1>
 								</div>
-										<div class="p-5 col-11 col-lg-11 offset-1 col-sm-11 col-md-11">
-												<form class="container-fluid" id="contactMe">
+										<div class="offset-lg-4 col-lg-4">
+												<form class="container-fluid bg-white">
 													
 												<!-- Name section -->
 												<div class="mb-2 pt-2">
@@ -194,7 +190,7 @@
 												</div>
 
 												<!-- Button section -->
-												<div class="mb-2 pt-2 p-5 col-12 col-lg-10 offset-1 col-sm-4 col-md-4 d-lg-flex justify-content-center">
+												<div class="pb-3 pt-3 col-12 d-flex justify-content-center">
 													<button type="submit" id="sendButton" class="text-white pr-5 pl-5 btn btn-primary" data-toggle="modal" data-target="exampleModal">SEND MESSAGE</button>
 												</div>
 
@@ -211,7 +207,7 @@
 												      <div class="modal-body">
 												        <p>Your response has been submitted.</p>
 												      </div>
-												      <div class="modal-footer">
+												      <div class="modal-footer d-flex justify-content-center">
 												        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 												      </div>
 												    </div>
@@ -227,7 +223,7 @@
 	</main>
 	<!-- Main Section End -->
 
-	<footer>
+	<footer class="pt-5">
 			<div>
             <!-- Creates an inline element -->
             <span class="span">Designed & Built by EJ David Guardo</span>
