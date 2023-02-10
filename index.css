@@ -1,248 +1,169 @@
 * {
-	padding-top: 1px;
-	box-sizing: border-box;
-	font-family: 'Montserrat', sans-serif;
-	z-index: 2;
-}
-
-#wholeContent{
-	background-image: url(./images/pngtree-blue-minimalist-texture-background-image_557079.jpg);
-	background-size: contain;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*Navbar Start*/
 #navBar{
-	position: fixed;
+    position: fixed;
+    opacity: 0.7;
+    z-index: 3;
 }
 
-#homeNavbar{
-	color: #64ffda;
-	margin-left: 15px;
-	font-size: 1rem;
-	padding: 15px 16px;
-	z-index: 3;
+.bgimage {
+    height:100vh;
+    background: url('./images/black%20background.jpg');
+    background-size:cover;
+    position:relative;
+}
+
+.hero_title {
+    font-size: 4.5vw;
+}
+.hero_desc {
+    font-size: 2vw;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    color: white;
+}
+
+#home{
+    color: white;
 }
 
 #homeLandingPage {
-	color: #64ffda;
-	position: fixed;
-	padding: 48px;
-	position: fixed;
-	z-index: 3;
+    color: white;
+    padding: 48px;
 }
 
 #aboutMeLandingPage{
-	color: #64ffda;
-	padding: 10px;
-	margin: 15px;
+    color: white;
+    padding: 10px;
+    margin: 15px;
 }
 
 #galleryLandingPage{
-	color: #64ffda;
-	padding: 10px;
-	margin: 15px;
+    color: white;
+    padding: 10px;
+    margin: 15px;
 }
 
 #contactMeLandingPage{
-	color: #64ffda;
-	padding: 12px;
-	margin: 15px;
+    color: white;
+    padding: 12px;
+    margin: 15px;
 }
 
 #resumeButton{
-	border: 1px solid #64ffda;
-	color: #64ffda;
-	background-color: transparent;
-	border-radius: 4px;
-	text-decoration: none;
-	margin-left: 15px;
-	font-size: 1rem;
-	padding: 15px 16px;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    background-color: transparent;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1rem;
+    padding: 15px 16px;
+    font-weight: bold;
 }
 
-/*Navbar End*/
+.imageAboutPage {
+    width: 100%;
+    border-radius: 25%;
 
-/*Icons Start*/
+}
+
+.aboutBackground{
+    background: black;
+    padding-bottom: 300px;
+}
+
+.aboutSecondBg{
+    background: #f2aa4cff;
+    padding-top: 25px;
+}
+
+#gallery{
+    background: url('./images/istockphoto-938050474-170667a.jpg');
+    background-size:cover;
+    position:relative;
+}
+
 #links{
-	position: fixed;
-	right: 0px;
-	bottom: 0px;
-	padding: 10px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    padding: 10px;
+    z-index: 3;
 }
 
 #svg-ig{
-	height: 50px;
-	width: 50px;
-	margin: 15px;
-	padding: 5px 0px;
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    padding: 5px 0px;
 }
 
 #svg-linkedin{
-	height: 50px;
-	width: 50px;
-	margin: 15px;
-	padding: 5px 0px;
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    padding: 5px 0px;
 }
 
 #svg-fb{
-	height: 50px;
-	width: 50px;
-	margin: 15px;
-	padding: 5px 0px;
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    padding: 5px 0px;
 }
 
 #svg-gmail{
-	height: 50px;
-	width: 50px;
-	margin: 15px;
-	padding: 5px 0px;
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    padding: 5px 0px;
 }
 /*Icons End*/
 
-/*AboutMe start*/
-#name {
-	font-weight: bold;
-	color: ghostwhite;
+/* gallery section css */
+.galleryText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.galleryIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.galleryText:hover {
+    border: 1px solid #008000;
 }
 
-#introduction{
-	justify-content: center;
-	flex-direction: column;
-	align-items: flex-start;
-	min-height: 100vh;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+.contactContent{
+    background: #f2aa4cff;
 }
 
-#intro{
-	color: #64ffda;
+#contact{
+    background: black;
 }
 
-#description{
-	color: floralwhite;
+.padding{
+    padding-bottom: 300px;
 }
 
-#profilePicture{
-	border-radius: 5%;
-	border: none;
-	width: 20%;
-	object-fit: cover;
-	opacity: 1;
-	float: right;
-	opacity: 0.5;
-}
 
-#profilePicture:hover{
-	opacity: 1;
-}
-
-#aboutMe{
-	color: #64ffda;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
-}
-
-#aboutMeText{
-	width: 50rem;
-}
-
-#aboutMeParagraph{
-	color: whitesmoke;
-	text-indent: 5%;
-}
-
-.aboutMeTechnologies{
-	color: whitesmoke;
-	font-size: 2rem;
-	margin: 2px;
-}
-
-.technologies{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding-bottom: 20px;
-
-}
-
-.html{
-	color: whitesmoke;
-	font-size: 2rem;
-	color: #64ffda;
-}
-
-.css{
-	color: whitesmoke;
-	font-size: 2rem;
-	color: #64ffda;
-}
-
-.bootstrap{
-	color: whitesmoke;
-	font-size: 2rem;
-	color: #64ffda;
-}
-/*AboutMe End*/
-
-/*Gallery Start*/
-#gallery{
-	padding-top: 10rem;
-	padding-bottom: 10rem;
-}
-
-#galleryText{
-	color: #64ffda;
-	padding-top: 10rem;
-}
-
-#htmlCard{
-	background-color: none;
-	border: 1px solid #64ffda;
-	background-color: transparent;
-	border-radius: 4px;
-	text-decoration: none;
-	font-size: 1rem;
-}
-
-#bootstrapCard{
-	border: 1px solid #64ffda;
-	background-color: transparent;
-	border-radius: 4px;
-	text-decoration: none;
-	font-size: 1rem;
-}
-
-#nodeJsCard{
-	border: 1px solid #64ffda;
-	background-color: transparent;
-	color: whitesmoke;
-	border-radius: 4px;
-	text-decoration: none;
-	font-size: 1rem;
-}
-
-/*Gallery End/
-
-
-/*ContactMe Start*/
-#contactMe{
-	color: #64ffda;
-}
-
-#sendButton{
-	padding: 20px 50px 20px 50px;
-	background-image: linear-gradient(to right, darkblue, #64ffda);
-	border: none;
-	text-justify: center;
-}
-
-#exampleModal{
-	color: black;
-}
-/*ContactMe End*/
-
-footer	{
-	text-align: center;
-	padding: 10px;
-	margin: 10px;
-	color: whitesmoke;
+footer  {
+    text-align: center;
+    padding: 10px;
+    color: whitesmoke;
+    background: black;
 }
