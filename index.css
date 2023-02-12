@@ -2,64 +2,134 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
 /*Navbar Start*/
 #navBar{
     position: fixed;
     opacity: 0.7;
     z-index: 3;
+    
+
 }
 
 .bgimage {
     height:100vh;
-    background: url('./images/black%20background.jpg');
+    background: url('./images/anime-city-night-park-vmgrwvvkr3dqy2tt.jpg');
     background-size:cover;
     position:relative;
 }
 
 .hero_title {
     font-size: 4.5vw;
+    animation: lights 5s 750ms linear infinite;
+    color: hsl(230, 100%, 95%);
+    font-weight: bold;
 }
 .hero_desc {
     font-size: 2vw;
+    animation: lights 5s 750ms linear infinite;
+    color: hsl(230, 100%, 95%);
+    font-weight: bold;
+
 }
 .hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 200%);
-    color: white;
+    animation: lights 5s 750ms linear infinite;
+    color: hsl(230, 100%, 95%);
+    font-weight: bold;
 }
 
 #home{
-    color: white;
+    animation: lights 5s 750ms linear infinite;
+    color: hsl(230, 100%, 95%);
+    font-weight: bold;
 }
 
 #homeLandingPage {
-    color: white;
     padding: 48px;
+    animation: lights 5s 750ms linear infinite;
+    color: hsl(230, 100%, 95%);
+    font-weight: bold;
 }
 
 #aboutMeLandingPage{
-    color: white;
     padding: 10px;
     margin: 15px;
+    animation: lights 5s 750ms linear infinite;
+    color: hsl(230, 100%, 95%);
+    font-weight: bold;
 }
 
 #galleryLandingPage{
     color: white;
     padding: 10px;
     margin: 15px;
+    animation: lights 5s 750ms linear infinite;
+    color: hsl(230, 100%, 95%);
+    font-weight: bold;
 }
 
 #contactMeLandingPage{
     color: white;
     padding: 12px;
     margin: 15px;
+    animation: lights 5s 750ms linear infinite;
+    color: hsl(230, 100%, 95%);
+    font-weight: bold;
 }
 
 #resumeButton{
-    border: 1px solid #ffc107;
-    color: #ffc107;
+    border: 1px solid;
     background-color: transparent;
     border-radius: 4px;
     text-decoration: none;
@@ -67,28 +137,44 @@
     font-size: 1rem;
     padding: 15px 16px;
     font-weight: bold;
+    animation: lights 5s 750ms linear infinite;
+    color: hsl(230, 100%, 95%);
+    font-weight: bold;
 }
 
 .imageAboutPage {
     width: 100%;
     border-radius: 25%;
-
+    opacity: 0.5;
 }
 
-.aboutBackground{
-    background: black;
-    padding-bottom: 300px;
+.imageAboutPage:hover{
+    opacity: 1;
+}
+
+#about{
+    background: url(https://rare-gallery.com/uploads/posts/5378689-star-dark-night-sky-astronomy-galaxy-tree-silhouette-twinkling-night-sky-constellation-milky-way-starry-sky-starrt-night-starry-night-looking-up-blue-sky-dark-blue-sky-long-exposure-forest-fre.jpg);
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .aboutSecondBg{
-    background: #f2aa4cff;
-    padding-top: 25px;
+    padding-top: 200px;  
+}
+
+.aboutMe {
+    animation: lights 5s 750ms linear infinite;
+    color: hsl(230, 100%, 95%);
+    font-weight: bold;
+    padding-top: 200px;
 }
 
 #gallery{
-    background: url('./images/istockphoto-938050474-170667a.jpg');
+    background: url(https://rare-gallery.com/uploads/posts/5378689-star-dark-night-sky-astronomy-galaxy-tree-silhouette-twinkling-night-sky-constellation-milky-way-starry-sky-starrt-night-starry-night-looking-up-blue-sky-dark-blue-sky-long-exposure-forest-fre.jpg);
     background-size:cover;
     position:relative;
+    min-height: 100vh;
+    padding-top: 200px;
 }
 
 #links{
@@ -148,22 +234,24 @@
     border: 1px solid #008000;
 }
 
-.contactContent{
-    background: #f2aa4cff;
-}
-
 #contact{
-    background: black;
+    background: url(https://rare-gallery.com/uploads/posts/5378689-star-dark-night-sky-astronomy-galaxy-tree-silhouette-twinkling-night-sky-constellation-milky-way-starry-sky-starrt-night-starry-night-looking-up-blue-sky-dark-blue-sky-long-exposure-forest-fre.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 200px;
 }
 
-.padding{
-    padding-bottom: 300px;
+.contactMe{
+    animation: lights 5s 750ms linear infinite;
+    color: hsl(230, 100%, 95%);
+    font-weight: bold;
 }
-
 
 footer  {
     text-align: center;
     padding: 10px;
     color: whitesmoke;
-    background: black;
+    background: url(https://rare-gallery.com/uploads/posts/5378689-star-dark-night-sky-astronomy-galaxy-tree-silhouette-twinkling-night-sky-constellation-milky-way-starry-sky-starrt-night-starry-night-looking-up-blue-sky-dark-blue-sky-long-exposure-forest-fre.jpg);
+    background-size: cover;
+    background-position: 50% 90%;
 }
