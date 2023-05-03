@@ -63,7 +63,6 @@
     height:100vh;
     background: url('./images/anime-city-night-park-vmgrwvvkr3dqy2tt.jpg');
     background-size:cover;
-    position:relative;
 }
 
 .hero_title {
@@ -72,13 +71,27 @@
     color: hsl(230, 100%, 95%);
     font-weight: bold;
 }
+
+@media only screen and (max-width: 768px) {
+    .hero_title {
+        font-size: 4.5vw;
+    }
+}
+
+
 .hero_desc {
     font-size: 2vw;
     animation: lights 5s 750ms linear infinite;
     color: hsl(230, 100%, 95%);
     font-weight: bold;
-
 }
+
+@media only screen and (max-width: 768px) {
+    .hero_desc {
+        font-size: 3vw;
+    }
+}
+
 .hero-text {
     position: absolute;
     top: 50%;
@@ -152,6 +165,36 @@
     opacity: 1;
 }
 
+@media only screen and (min-width: 768px) {
+    .imageAboutPage {
+        width: 100%;
+        border-radius: 25%;
+        opacity: 0.5;
+        position: absolute;
+        top: 80px;
+        right: 50px; 
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .imageAboutPage {
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 912px) {
+    .imageAboutPage {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 80px;
+    }
+}
+
+
 #about{
     background: url(https://rare-gallery.com/uploads/posts/5378689-star-dark-night-sky-astronomy-galaxy-tree-silhouette-twinkling-night-sky-constellation-milky-way-starry-sky-starrt-night-starry-night-looking-up-blue-sky-dark-blue-sky-long-exposure-forest-fre.jpg);
     background-size: cover;
@@ -166,7 +209,8 @@
     animation: lights 5s 750ms linear infinite;
     color: hsl(230, 100%, 95%);
     font-weight: bold;
-    padding-top: 200px;
+    padding-top: 3rem;
+    position: relative;
 }
 
 #gallery{
@@ -174,7 +218,7 @@
     background-size:cover;
     position:relative;
     min-height: 100vh;
-    padding-top: 200px;
+    padding-top: 3rem;
 }
 
 #links{
@@ -216,29 +260,21 @@
 
 /* gallery section css */
 .galleryText.card {
-    height: 220px;
+    height: 300px;
     cursor: pointer;
-  }
-.galleryIcon {
-    font-size: 36px;
-    text-align: center;
-    width: 100%;
 }
+
+
 .card-title {
     text-align: center;
 }
-.card:hover .servicesIcon {
-    color: #008000;
-}
-.galleryText:hover {
-    border: 1px solid #008000;
-}
+
 
 #contact{
     background: url(https://rare-gallery.com/uploads/posts/5378689-star-dark-night-sky-astronomy-galaxy-tree-silhouette-twinkling-night-sky-constellation-milky-way-starry-sky-starrt-night-starry-night-looking-up-blue-sky-dark-blue-sky-long-exposure-forest-fre.jpg);
     background-size: cover;
     min-height: 100vh;
-    padding-top: 200px;
+    padding-top: 3rem;
 }
 
 .contactMe{
@@ -247,11 +283,10 @@
     font-weight: bold;
 }
 
-footer  {
-    text-align: center;
-    padding: 10px;
-    color: whitesmoke;
-    background: url(https://rare-gallery.com/uploads/posts/5378689-star-dark-night-sky-astronomy-galaxy-tree-silhouette-twinkling-night-sky-constellation-milky-way-starry-sky-starrt-night-starry-night-looking-up-blue-sky-dark-blue-sky-long-exposure-forest-fre.jpg);
-    background-size: cover;
-    background-position: 50% 90%;
+@media only screen and (min-width: 768px) {
+    .footer {
+        padding-top: 290px;
+    }
 }
+
+
